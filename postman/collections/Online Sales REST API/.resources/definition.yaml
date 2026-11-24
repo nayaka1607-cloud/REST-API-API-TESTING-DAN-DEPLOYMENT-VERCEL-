@@ -1,0 +1,7 @@
+$kind: collection
+variables:
+  base_url: ""
+  customer_token: ""
+  "admin_token ": ""
+  "order_id ": ""
+  admin_token: ""
