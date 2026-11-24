@@ -1,0 +1,29 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/v1/checkout
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: "{\r
+
+    \  \"recipient_name\": \"Budi Customer\",\r
+
+    \  \"phone\": \"081234567890\",\r
+
+    \  \"address\": \"Jl. Praktikum No. 10, Purwokerto\",\r
+
+    \  \"shipping_service_id\": 1,\r
+
+    \  \"items\": [\r
+
+    \    {\"product_id\": 1, \"quantity\": 2}\r
+
+    \  ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{customer_token}}"
+order: 4000
